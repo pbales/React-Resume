@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Sally Student Resume</title>
+</head>
+<body>
+    <div id="application-root"></div>
+    <script
+        src="https://unpkg.com/react@16/umd/react.development.js">
+    </script>
+    <script
+        src="https://unpkg.com/react-dom@16/umd/react-dom.development.js">
+    </script>
+    <script
+        src="https://unpkg.com/babel-standalone@6/babel.min.js">
+    </script>
+    <script type="text/babel">
+        const appRoot = document.querySelector('#application-root');
+
+        function App(props) {
+            return (
+                <main>
+                    <header>
+                        <h1>{props.name}</h1>
+                        <h2>Web Developer</h2>
+                    </header>
+                    <address>
+                        <p>Email: <a href="mailto:sally.student@gmail.com">sally.student@gmail.com</a></p>
+                        <p>Phone: (123)456-7890</p>
+                        <img src="https://ia.media-imdb.com/images/M/MV5BMTY5NzE3NzU3MF5BMl5BanBnXkFtZTgwMjg0NTQ5MDE@._V1_UX214_CR0,0,214,317_AL_.jpg"
+                        alt="A picture of Sally Student." />
+                    </address>
+                    <section>
+                        <h3>Education</h3>
+                        <ul>
+                        <li>Phoenix Union High School Graduate</li>
+                        <li>Harvard University Bachelor of Science, Computer Science</li>
+                        <li>Thinkful Full Stack Flex Program Graduate</li>
+                        </ul> 
+                    </section>
+                    <section>
+                        <h3>Employment History</h3>
+                        <h4>Software Engineer</h4>
+                        <p>Google, Mountain View, CA (2015-present)</p>
+                        <ul>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel sagittis ligula. Lorem ipsum dolor sit<br /> amet, consectetur adipiscing elit.</li>
+                            <li>Integer sagittis rutrum risus, ut commodo quam. Nulla eget tortor vel lectus mollis ultrices sed consectetur metus.</li>
+                        </ul>
+                        <h4>Full Stack Web Developer</h4>
+                        <p>Amazon, Seattle, WA (2010-2015)</p>
+                        <ul>
+                            <li>Nullam in venenatis urna. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                            <li>Phasellus dapibus, ipsum quis congue congue, eros purus convallis metus, at fermentum nunc diam vitae enim.<br /> Phasellus pharetra lacus elementum lectus ornare, ac porttitor massa vestibulum. </li>
+                        </ul>
+                    </section>
+                </main>
+            );
+        }
+
+        ReactDOM.render(
+            <App name='Sally Student' />,
+            appRoot
+            );
+    </script>
+</body>
+</html>
